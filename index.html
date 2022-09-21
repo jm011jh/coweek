@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./publish/css/public.css">
+    <link rel="stylesheet" href="./publish/css/main.css">
+</head>
+
+<body>
+    <div class="public--container">
+        <div class="main--banner">
+        <!--메인 이벤트 배너입니다. 이벤트를 등록하면 이 곳에 제목 기간 이미지가 등록됩니다.
+        main.js의 
+        const mainBannerSwiper
+        const mainBannerSwiperScrollbar
+        const mainBannerSwiperCount
+        const mainBannerSwiperTotal
+        참조
+        -->
+            <div class="swiper mainBannerSwiper">
+                <div class="swiper-wrapper">
+                    <div class="mainBannerSwiper-slide swiper-slide">
+                        <div class="mainBannerSwiper-slide-img" style="background-image: url(./img/main_bnr_thumb.png);"></div><!--이곳에 이벤트 썸네일이 들어갑니다.-->
+                        <div class="mainBannerSwiper-slide-text">
+                            <div class="mainBannerSwiper-slide-text00">OPEN</div><!--이곳에 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text01">Co-Week 아카데미 수강신청기간!</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text02">10.7 ~ 10.10</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                        </div>
+                    </div>
+                    <div class="mainBannerSwiper-slide swiper-slide">
+                        <div class="mainBannerSwiper-slide-img" style="background-image: url(./img/main_bnr_thumb.png);"></div><!--이곳에 이벤트 썸네일이 들어갑니다.-->
+                        <div class="mainBannerSwiper-slide-text">
+                            <div class="mainBannerSwiper-slide-text00">OPEN</div><!--이곳에 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text01">2222222222</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text02">10.7 ~ 10.10</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                        </div>
+                    </div>
+                    <div class="mainBannerSwiper-slide swiper-slide">
+                        <div class="mainBannerSwiper-slide-img" style="background-image: url(./img/main_bnr_thumb.png);"></div><!--이곳에 이벤트 썸네일이 들어갑니다.-->
+                        <div class="mainBannerSwiper-slide-text">
+                            <div class="mainBannerSwiper-slide-text00">OPEN</div><!--이곳에 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text01">세번째 테스트내용입니다!</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                            <div class="mainBannerSwiper-slide-text02">10.7 ~ 10.10</div><!--이곳에 이벤트 제목이 들어갑니다.-->
+                        </div>
+                    </div>
+                </div>
+                <div class="mainBannerSwiper-remote">
+                    <div class="mainBannerSwiper-count">
+                        <div id="mainBannerSwiperCount" class="mainBannerSwiper-count-now">01</div>
+                        <span></span>
+                        <div id="mainBannerSwiperTotal" class="mainBannerSwiper-count-total">05</div>
+                    </div>
+                    <div class="swiper-scrollbar-bg">
+                        <div class="mainBannerSwiper-scrollbar animation"></div>
+                    </div>
+                    <div class="mainBannerSwiper-button">
+                        <div class="mainBannerSwiper-button-prev swiper-button-prev"></div>
+                        <div class="mainBannerSwiper-button-next swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--인공지능-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">인공지능</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper01">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">인공지능</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">인공지능</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">인공지능</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">인공지능</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">인공지능</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper01-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper01-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--빅데이터-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">빅데이터</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper02">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">빅데이터</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">빅데이터</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">빅데이터</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">빅데이터</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">빅데이터</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper02-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper02-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--차세대반도체-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">차세대반도체</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper03">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">차세대반도체</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">차세대반도체</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">차세대반도체</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">차세대반도체</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">차세대반도체</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper03-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper03-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--미래자동차-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">미래자동차</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper04">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">미래자동차</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">미래자동차</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">미래자동차</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">미래자동차</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">미래자동차</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper04-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper04-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--video"><!--비디오섹션(이 부분은 그대로 반영 부탁드립니다.)-->
+            <div class="main--video-wrap">
+                <div class="main--video-content"><video id="mainVideo" src="https://player.vimeo.com/progressive_redirect/playback/751040924/rendition/720p/file.mp4?loc=external&signature=55c3b2600932caa921155c73c585e4d949fbc12bcbbc9c939431cc921c046050"></video></div>
+                <div id="mainVideoCover" class="main--video-cover">
+                    <!-- <img src="./img/main_video_thumb.png" alt=""> -->
+                    <div class="main--video-cover-gradient"></div>
+                    <img src="./img/main_videoplay.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--바이오헬스-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">바이오헬스</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper05">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">바이오헬스</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">바이오헬스</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">바이오헬스</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">바이오헬스</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">바이오헬스</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper05-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper05-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--실감미디어-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">실감미디어</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper06">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">실감미디어</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">실감미디어</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">실감미디어</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">실감미디어</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">실감미디어</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper06-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper06-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--지능형로봇-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">지능형로봇</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper07">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">지능형로봇</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">지능형로봇</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">지능형로봇</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">지능형로봇</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">지능형로봇</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper07-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper07-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--classFigure"><!--에너지신산업-->
+            <div class="classFigure--head">
+                <div class="classFigure--head-text01">에너지신산업</div>
+                <div class="classFigure--link">
+                    <a href="분야별모둠페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper figureSwiper figureSwiper08">
+                <div class="swiper-wrapper">
+                    <!-- 강의가 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">에너지신산업</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">에너지신산업</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">에너지신산업</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">에너지신산업</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="classFigure--thumb">
+                            <a href="강의상세페이지로이동" style="background-image:url(강의이미지썸네일경로)" class="classFigure--thumb-bg"></a>
+                            <div class="classFigure--onoff">
+                                <!-- <p class="classFigure--online">ON-LINE</p> -->
+                                <p class="classFigure--offline">OFF-LINE</p>
+                                <!-- on/off-line 여부에 따라 요소를 다르게 출력해주세요 -->
+                            </div>
+                            <div class="classFigure--like">
+                                <img class="like-off" src="./img/ico_class_like_off.png" alt="">
+                                <!-- <img src="./img/ico_class_like_on.png" alt=""> -->
+                                <!-- like 여부에 따라 아이콘 이미지를 다르게 출력해주세요 -->
+                            </div>
+                        </div>
+                        <div class="classFigure--text">
+                            <div class="classFigure--title">
+                                강의 타이틀 제목
+                            </div>
+                            <div class="classFigure--time">
+                                <p class="classFigure--date">10.31 OPEN</p>
+                                <span></span>
+                                <p class="classFigure--duration">11:30 ~ 13:30</p>
+                            </div>
+                            <div class="classFigure--tags">
+                                <a href="분야별모둠페이지로이동">에너지신산업</a><!-- 해당 강의 분야 -->
+                                <a href="학교별모둠페이지로이동">학교이름</a><!-- 해당 강사 소속 학교 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="figureSwiper-button">
+                <div class="figureSwiper-button-prev figureSwiper08-button-prev swiper-button-prev"></div>
+                <div class="figureSwiper-button-next figureSwiper08-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--promoEvent"><!--이벤트프로모션-->
+            <div class="promoEvent--head">
+                <div class="promoEvent--head-title">
+                    <p class="promoEvent--head-text01">프로모션</p>
+                    <p class="promoEvent--head-text02">CO-WEEK가<br>준비하는 이벤트 모음</p>
+                    <p class="promoEvent--head-text03">특별한 혜택을 받을 수 있는 기회를 바로 확인해보세요!</p>
+                </div>
+                <div class="promoEvent--link">
+                    <a href="프로모션이벤트페이지로이동"><p>더보기</p><span></span></a>
+                </div>
+            </div>
+            <div class="swiper promoSwiper">
+                <div class="swiper-wrapper">
+                    <!-- 프로모션 이벤트 내용이 swiper-slide 요소안에 담깁니다. -->
+                    <div class="swiper-slide">
+                        <a href="프로모션상세페이지로이동" class="promoEvent--thumb" style="background-image:url(여기에이미지경로삽입)">
+                            <div class="promoEvent--thumb-bg"></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="프로모션상세페이지로이동" class="promoEvent--thumb" style="background-image:url(여기에이미지경로삽입)">
+                            <div class="promoEvent--thumb-bg"></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="프로모션상세페이지로이동" class="promoEvent--thumb" style="background-image:url(여기에이미지경로삽입)">
+                            <div class="promoEvent--thumb-bg"></div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="프로모션상세페이지로이동" class="promoEvent--thumb" style="background-image:url(여기에이미지경로삽입)">
+                            <div class="promoEvent--thumb-bg"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="promoSwiper-button">
+                <div class="promoSwiper-button-prev swiper-button-prev"></div>
+                <div class="promoSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main--category"><!--카테고리별사이트이동-->
+            <div class="main--category-wrap">
+                <a href="인공지능프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">인공지능</div>
+                </a>
+                <a href="빅데이터프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">빅데이터</div>
+                </a>
+                <a href="차세대반도체프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">차세대반도체</div>
+                </a>
+                <a href="미래자동차프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">미래자동차</div>
+                </a>
+                <a href="바이오헬스프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">바이오헬스</div>
+                </a>
+                <a href="실감미디어프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">실감미디어</div>
+                </a>
+                <a href="지능형로봇프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">지능형로봇</div>
+                </a>
+                <a href="에너지산업프로그램리스트로이동">
+                    <div class="main--category-text01">신기술 분야별 강의</div>
+                    <div class="main--category-text02">에너지산업</div>
+                </a>
+            </div>
+        </div>
+        <div class="main--introduce"><!--CO-WEEK소개글-->
+            <a href="아카데미소개글로가기" class="main--introduce-wrap">
+                <div class="main--introduce-text">
+                    <div class="main--introduce-text01">CO-WEEK 아카데미에 대한 소개글을 <br>넣는 영역입니다. 최대 2줄</div>
+                    <div class="main--introduce-text02">Co-Week 아카데미 소개 보러가기&nbsp;&nbsp;<span></span></div>
+                </div>
+                <div class="main--introduce-bg"></div>
+            </a>
+        </div>
+        <div class="public--notice"><!--공지게시글 슬라이드-->
+            <div class="public--notice-wrap">
+                <div class="public--notice-title">Notice</div>
+                <div class="swiper publicNoticeSwiper">
+                    <div class="swiper-wrapper">
+                        <a href="해당공지글로이동" class="swiper-slide">
+                            <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                            <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                        </a>
+                        <a href="해당공지글로이동" class="swiper-slide">
+                            <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                            <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                        </a>
+                        <a href="해당공지글로이동" class="swiper-slide">
+                            <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                            <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                        </a>
+                    </div>
+                </div>
+                <div class="publicNoticeSwiper-button">
+                    <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                    <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="talkButton" class="main--talk"><a href=""><img src="./img/talk_notice.png" alt=""><span>1</span></a></div><!--span = 토크 알림 카운트 숫자-->
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/main.js"></script>
+</body>
+
+</html>

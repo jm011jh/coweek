@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./publish/css/public.css">
+        <link rel="stylesheet" href="./publish/css/join.css">
+    </head>
+<body>
+    <div class="public--container">
+        <div class="join--container join03">
+            <div class="join--wrap">
+                <div class="join--head">
+                    <div class="join--head-text">
+                        <div class="join--head-text01">회원정보를<br>기입해주세요.</div>
+                        <div class="join--head-text02">가입정보는 5분이면 충분합니다.</div>
+                    </div>
+                    <div class="join--head-index">
+                        <span class="join--head-index-span join--head-index-spanDone"></span>
+                        <span class="join--head-index-span join--head-index-spanDone"></span>
+                        <span class="join--head-index-span join--head-index-spanNow">3</span>
+                    </div>
+                </div>
+                <div class="join--persent">
+                    <span class="step03"></span>
+                </div>
+                <div class="join--body">
+                    <form action="">
+                    <div class="join--inputBox"><!--이메일아이디 인풋-->
+                        <div class="join--input-title">아이디(이메일)</div>
+                        <div class="flex">
+                            <input type="text" class="join--input" placeholder="이메일 주소">
+                            </input><!--회원의 이메일값입니다.-->
+                            <div class="join--input-duplicate">중복확인</div>
+                        </div>
+                    </div>
+                    <div class="join--inputBox"><!--비밀번호 인풋-->
+                        <div class="join--input-title">비밀번호</div>
+                        <div class="join--input-pw">
+                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호값입니다.-->
+                            <div class="join--input-pw-show"><!--이 버튼을 누르면 비밀번호input type을 text로 변경해주세요. 부모요소인 .join--input-pw에 visible 클래스 토글 기능 달아주세요-->
+                                <img class="visible" src="./img/join_icon_visible.png" alt="">
+                                <img class="invisible" src="./img/join_icon_invisible.png" alt="">
+                            </div>
+                        </div>
+                        <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div>
+                    </div>
+                    <div class="join--inputBox"><!--비밀번호확인 인풋-->
+                        <div class="join--input-title">비밀번호 확인</div>
+                        <div class="join--input-pw">
+                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호값입니다.-->
+                            <div class="join--input-pw-show"><!--이 버튼을 누르면 비밀번호input type을 text로 변경해주세요. 부모요소인 .join--input-pw에 visible 클래스 토글 기능 달아주세요-->
+                                <img class="visible" src="./img/join_icon_visible.png" alt="">
+                                <img class="invisible" src="./img/join_icon_invisible.png" alt="">
+                            </div>
+                        </div>
+                        <!-- <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div> -->
+                    </div>
+                    <div class="join--inputBox"><!--휴대폰번호 인풋-->
+                        <div class="join--input-title">휴대폰인증</div>
+                        <div class="join--input-phone">
+                            <input type="password" class="join--input" placeholder="'-'없이 숫자만 입력해주세요."></input><!--회원의 비밀번호값입니다.-->
+                            <div class="join--input-phoneCheck"><!--이 버튼을 누르면 전화번호 인증기능이 실행됩니다.-->
+                                <span>인증요청</span>
+                            </div>
+                        </div>
+                        <!-- <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div> -->
+                    </div>
+                    <div class="join--each-input">
+                        
+                    </div>
+                    <input type="submit" class="join--done-button" value="확인"></input><!--이 요소를 클릭하면 다음 단계(join03.html)로 이동합니다. -->
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+</body>
+</html>
