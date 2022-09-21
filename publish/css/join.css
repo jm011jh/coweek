@@ -67,7 +67,7 @@ input{background-color: unset;}
 .join--inputBox .flex{display: flex;}
 input.join--input{display: block;width: 100%;font-size: 16px;margin-top: 10px;line-height: 1;}
 input.join--input:focus{border-color: var(--blue02--);outline: var(--blue02--);}
-.join--input-duplicate{background-color: var(--grayBlue3--);color: #fff;padding: 19px 0;width: 60%;margin-left: 10px;text-align: center;margin-top: 10px;border-radius: 6px;font-size: 15px;}
+.join--input-duplicate{background-color: var(--grayBlue3--);color: #fff;padding: 19px 0;width: 60%;margin-left: 10px;text-align: center;margin-top: 10px;border-radius: 6px;font-size: 15px;cursor: pointer;}
 .join--input-exp{padding: 0 8px;margin-top: 12px;font-size: 13px;color: var(--grayBlue--);}
 .join--input-pw{position:relative}
 .join--input-pw-show{position:absolute;top: 60%;left: calc(100% - 24px);transform: translate(-100%,-80%);cursor: pointer;}
