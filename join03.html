@@ -36,6 +36,7 @@
                             </input><!--회원의 이메일값입니다.-->
                             <div class="join--input-duplicate">중복확인</div>
                         </div>
+                        <div class="join--input-alert">올바른 이메일 형식을 입력해주세요.</div>
                     </div>
                     <div class="join--inputBox"><!--비밀번호 인풋-->
                         <div class="join--input-title">비밀번호</div>
@@ -47,32 +48,103 @@
                             </div>
                         </div>
                         <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div>
+                        <div class="join--input-alert">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</div>
                     </div>
                     <div class="join--inputBox"><!--비밀번호확인 인풋-->
                         <div class="join--input-title">비밀번호 확인</div>
                         <div class="join--input-pw">
-                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호값입니다.-->
+                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호입력값을 중복체크합니다.-->
                             <div class="join--input-pw-show"><!--이 버튼을 누르면 비밀번호input type을 text로 변경해주세요. 부모요소인 .join--input-pw에 visible 클래스 토글 기능 달아주세요-->
                                 <img class="visible" src="./img/join_icon_visible.png" alt="">
                                 <img class="invisible" src="./img/join_icon_invisible.png" alt="">
                             </div>
                         </div>
-                        <!-- <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div> -->
+                        <div class="join--input-alert">비밀번호가 일치하지 않습니다.</div>
                     </div>
                     <div class="join--inputBox"><!--휴대폰번호 인풋-->
                         <div class="join--input-title">휴대폰인증</div>
                         <div class="join--input-phone">
-                            <input type="password" class="join--input" placeholder="'-'없이 숫자만 입력해주세요."></input><!--회원의 비밀번호값입니다.-->
-                            <div class="join--input-phoneCheck"><!--이 버튼을 누르면 전화번호 인증기능이 실행됩니다.-->
+                            <input type="text" class="join--input" placeholder="'-'없이 숫자만 입력해주세요."></input><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                            <div class="join--input-phoneCheck"><!--이 버튼을 누르면 전화번호 인증기능이 실행됩니다. 인증번호가 전송된 후에 .join--input-phonePut 이 요소에 'show'클래스가 추가됩니다.-->
                                 <span>인증요청</span>
                             </div>
                         </div>
-                        <!-- <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div> -->
+                        <div class="join--input-alert">휴대폰번호 입력은 필수입니다.</div><!--인풋에 포커싱 후 입력하지 않거나 인증요청을 완료하지 않을경우 이 요소에 "show" 클래스를 추가해주세요.-->
+                    </div>
+                    <div class="join--input-phonePut">
+                        <input class="join--input" placeholder="인증 번호 입력"></input>
+                        <div class="join--input-phonePut-abs">
+                            <span>05:00</span>
+                            <div class="join--input-phonePut-confirm">확인</div>
+                        </div>
                     </div>
                     <div class="join--each-input">
-                        
+                        <div class="join--inputBox">
+                            <div class="join--input-title">학교분야</div>
+                            <!--첫번 째 셀렉트값인 분야선택은 앞의 join02.html(2단계)에서 COSS재학생으로 선택했을 경우에만 활성화 해주시고 나머지 "공동활용 재학생","일반 수강자"는 이 셀렉트옵션을 비활성화해주세요.-->
+                            <div class="join--input-select"><!--상황에 따라이 요소에 open 클래스가 부여되고 삭제됩니다.-->
+                                <div class="join--input-selectHidden"><!--여기는 전송용 input 입니다. 형제요소('.join--input-select-title', '.join--input-select-option')의 값과 동일하게 인풋값을 설정해주세요.-->
+                                    <select name="" id="">
+                                        <option value="분야1">분야1</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="분야2">분야2</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="분야3">분야3</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="분야4">분야4</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                    </select>
+                                </div>
+                                <div class="join--input-select-title">
+                                    <!--하위의 옵션(.join--input-select-optionItem)을 선택하면
+                                        이 요소안의 p요소의 innerHTML도 옵션값과 동일하게 해주세요.
+                                        이 요소를 클릭하면 상위요소인 (.join--input-select)에 "open"클래스를 추가해주세요.
+                                        형제요소(.join--input-select-option)의 자식요소(.join--input-select-optionItem)를 클릭 시
+                                        상위요소인 (.join--input-select)에 추가됐던 클래스"open"를 지워주세요.
+                                        그 외에 요소(바깥요소들) 클릭 시에도 동일합니다-->
+                                    <p>분야를 선택해주세요</p><span class="arrow"></span>
+                                </div>
+                                <div class="join--input-select-option">
+                                    <div class="join--input-select-optionItem">분야1</div><!--옵션의 값들만큼 만들어주세요-->
+                                    <div class="join--input-select-optionItem">분야2</div><!--옵션을 클릭 시 상위의 .join--input-select-title p 요소의 innerHTML을, 선택한 옵션값의 innerHTML과 동일하게 해주시고 .join--input-select-title요소에 있는 "open"클래스를 지워주세요.-->
+                                    <div class="join--input-select-optionItem">분야3</div>
+                                    <div class="join--input-select-optionItem">분야4</div>
+                                </div>
+                            </div>
+                            <div class="join--input-alert">분야선택은 필수입니다.</div><!--학교분야를 선택하지 않을 시 이 요소에 "show"클래스를 추가해주세요.-->
+                        </div>
+                        <div class="join--inputBox">
+                            <div class="join--input-select"><!--위의 요소와 동일한 기능입니다.-->
+                                <div class="join--input-selectHidden"><!--여기는 전송용 input 입니다. 형제요소('.join--input-select-title', '.join--input-select-option')의 값과 동일하게 인풋값을 설정해주세요.-->
+                                    <select name="" id="">
+                                        <option value="대학교1">대학교1</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="대학교2">대학교2</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="대학교3">대학교3</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                        <option value="대학교4">대학교4</option><!--하단의 join--input-select-optionItem과 동일한 값-->
+                                    </select>
+                                </div>
+                                <div class="join--input-select-title open">
+                                    <!--하위의 옵션(.join--input-select-optionItem)을 선택하면
+                                        이 요소안의 p요소의 innerHTML도 옵션값과 동일하게 해주세요.
+                                        이 요소를 클릭하면 상위요소인 (.join--input-select)에 "open"클래스를 추가해주세요.
+                                        형제요소(.join--input-select-option)의 자식요소(.join--input-select-optionItem)를 클릭 시
+                                        상위요소인 (.join--input-select)에 추가됐던 클래스"open"를 지워주세요.
+                                        그 외에 요소(바깥요소들) 클릭 시에도 동일합니다-->
+                                    <p>학교를 선택해주세요</p><span class="arrow"></span>
+                                </div>
+                                <div class="join--input-select-option open">
+                                    <div class="join--input-select-optionItem">코위크대학교1</div><!--옵션의 값들만큼 만들어주세요-->
+                                    <div class="join--input-select-optionItem">코위크대학교2</div><!--옵션을 클릭 시 상위의 .join--input-select-title p 요소의 innerHTML을, 선택한 옵션값의 innerHTML과 동일하게 해주시고 .join--input-select-title요소에 있는 "open"클래스를 지워주세요.-->
+                                    <div class="join--input-select-optionItem">코위크대학교3</div>
+                                    <div class="join--input-select-optionItem">코위크대학교4</div>
+                                </div>
+                            </div>
+                            <div class="join--input-alert">학교선택은 필수입니다.</div><!--학교분야를 선택하지 않을 시 이 요소에 "show"클래스를 추가해주세요.-->
+                        </div>
+                        <div class="join--inputBox">
+                            <div class="join--input-number">
+                                <input type="text" class="join--input" placeholder="학번을 입력해주세요."></input><!--이 인풋에는 숫자만 입력되게 해주세요.-->
+                            </div>
+                            <div class="join--input-alert">학번입력은 필수입니다.</div>
+                        </div>
                     </div>
-                    <input type="submit" class="join--done-button" value="확인"></input><!--이 요소를 클릭하면 다음 단계(join03.html)로 이동합니다. -->
+                    <input type="submit" class="join--done-button" value="회원가입"></input><!--모든 입력값을 입력하면 이 요소에 checked 클래스를 부여하고 클릭 시 회원가입이 완료됩니다. -->
                 </form>
                 </div>
             </div>
@@ -84,5 +156,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./publish/js/get_component.js"></script>
     <script src="./publish/js/public.js"></script>
+    <!--
+        인풋요소에 focusout 했을 때 조건값을 충족하지 않는 경우 join--input-alert에 show클래스를 추가해주세요.
+    -->
 </body>
 </html>
