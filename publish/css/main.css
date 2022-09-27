@@ -147,6 +147,3 @@
     .main--introduce-bg,
     .main--introduce-text{width: 100%;}
 }
-
-.main--talk{position: fixed;z-index: 50;bottom: 100px;right: 20px;}
-.main--talk span{border-radius: 50%;font-size: 15px;font-weight: 600;color: #fff;background-color: #f63441;position: absolute;top: 0;right: 0;width: 20px;height: 20px;display: flex;align-items: center;justify-content: center;}
