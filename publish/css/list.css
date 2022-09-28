@@ -35,7 +35,7 @@
 .list--head-sort-pop-selectItem.checked .list--head-sort-pop-selectItem-box::after{border-color: #fff;}
 .list--head-sort-pop-selectItem.checked .list--head-sort-pop-selectItem-box{background-color: var(--blue02--);border-color: var(--blue02--);}
 .list--head-sort-pop-decide{display: flex;justify-content: space-between;margin-top: 20px;}
-.list--head-sort-pop-reset{display: flex;align-items: center;}
+.list--head-sort-pop-reset{display: flex;align-items: center;cursor: pointer;}
 .list--head-sort-pop-reset img{margin-right: 8px;}
 .list--head-sort-pop-send{font-weight: 700;padding: 14px 28px;border-radius: 6px;background-color: var(--grayBlue3--);cursor: pointer;}
 
