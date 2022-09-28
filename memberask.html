@@ -26,10 +26,10 @@
                     </div>
                 </div>
                 <div class="member--aside-menu">
-                    <div class="member--aside-menuItem"><a href="./member.html"><img src="./img/member_icon_aside01.png" alt=""><p>내 강의 보기</p><span></span></a></div>
-                    <div class="member--aside-menuItem"><a href="수강신청내역"><img src="./img/member_icon_aside02.png" alt=""><p>수강 신청 내역</p><span></span></a></div>
-                    <div class="member--aside-menuItem"><a href="./memberwish.html"><img src="./img/member_icon_aside03.png" alt=""><p>위시 리스트</p><span></span></a></div>
-                    <div class="member--aside-menuItem on"><a href="/memberask.html"><img src="./img/member_icon_aside04.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="./member.html"><img src="./img/member_icon_aside04.png" alt=""><p>내 강의 보기</p><span></span></a></div>
+                    
+                    <div class="member--aside-menuItem"><a href="./memberwish.html"><img src="./img/member_icon_aside02.png" alt=""><p>위시 리스트</p><span></span></a></div>
+                    <div class="member--aside-menuItem on"><a href="/memberask.html"><img src="./img/member_icon_aside01.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
                 </div>
             </div>
             <div class="member--contents">
@@ -37,12 +37,12 @@
                     <div class="member--title-text">
                         <p>1:1 문의사항</p>
                     </div>
-                    <div class="member--ask-list">
+                    <div class="member--ask-list"><!--문의사항 글 유무에 따라 하위의 요수중 하나를 출력합니다.-->
                         <div class="member--ask-noask" style="display:none;"><!--문의사항이 없으면 해당 요소를 출력해주세요.-->
                             <div class="member--ask-noask-img"><img src="./img/member_noask.png" alt=""></div>
                             <div class="member--ask-noask-text01">등록된 내역이 없습니다</div>
                         </div>
-                        <div class="member--ask-yesask"><!--문의사항이 있으면 해당 요소를 출력해주세요.-->
+                        <div class="member--ask-yesask"><!--문의사항이 하나 이상 있으면 해당 요소를 출력해주세요.-->
                             <div class="member--ask-list">
                                 <div class="member--ask-listItem">
                                     <div class="member--ask-listItem-text">
@@ -73,7 +73,32 @@
             </div>
         </div>
     </div>
-    <div id="talkButton" class="main--talk"><a href=""><img src="./img/talk_notice.png" alt=""><span>1</span></a></div><!--span = 토크 알림 카운트 숫자-->
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
     <div id="header" class="headerComponent"></div>
     <div id="footer" class="footerComponent"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

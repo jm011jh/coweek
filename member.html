@@ -24,43 +24,186 @@
                     </div>
                 </div>
                 <div class="member--aside-menu">
-                    <div class="member--aside-menuItem on"><a href="./member.html"><img src="./img/member_icon_aside01.png" alt=""><p>내 강의 보기</p><span></span></a></div>
-                    <div class="member--aside-menuItem"><a href="수강신청내역"><img src="./img/member_icon_aside02.png" alt=""><p>수강 신청 내역</p><span></span></a></div>
-                    <div class="member--aside-menuItem"><a href="./memberwish.html"><img src="./img/member_icon_aside03.png" alt=""><p>위시 리스트</p><span></span></a></div>
-                    <div class="member--aside-menuItem"><a href="/memberask.html"><img src="./img/member_icon_aside04.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
+                    <div class="member--aside-menuItem on"><a href="./member.html"><img src="./img/member_icon_aside04.png" alt=""><p>내 강의 보기</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="./memberwish.html"><img src="./img/member_icon_aside02.png" alt=""><p>위시 리스트</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="/memberask.html"><img src="./img/member_icon_aside01.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
                 </div>
             </div>
             <div class="member--contents">
-                <div class="member--contents-wrap01">
+                <div class="member--contents-wrap03">
                     <div class="member--title-text"><p>진행중인 Co-Week 강의</p></div>
-                    <div class="member--onoff-switch">
-                        <div class="member--onoff-button on"><p>오프라인 강의</p></div>
-                        <div class="member--onoff-button"><p>온라인 강의</p></div>
+                    <!--수강 중인 강의의 유무에 따라서 하위 요소중 하나를 보여주세요-->
+                    <div class="member--onoff-noClass" style="display: none;"><!--수강 중인 강의가 없는 경우 이 콘텐츠를 보여주세요-->
+                        <div class="member--onoff-noClass-icon"><img src="./img/member_noclass.png" alt=""></div>
+                        <div class="member--onoff-text01">수강 중인 강의가 없습니다 <img src="./img/member_noclass02.png" alt=""></div>
+                        <div class="member--onoff-go"><a href="강의리스트로">강의 보러가기</a></div>
                     </div>
-                    <div class="member--onoff-show">
-                        <div class="member--onoff-showOn">
-
-                            <!--수강 중인 강의가 없는 경우 이 콘텐츠를 보여주세요-->
-                            <div class="member--onoff-noClass">
-                                <div class="member--onoff-noClass-icon"><img src="./img/member_noclass.png" alt=""></div>
-                                <div class="member--onoff-text01">수강 중인 강의가 없습니다 <img src="./img/member_noclass02.png" alt=""></div>
-                                <div class="member--onoff-go"><a href="강의리스트로">강의 보러가기</a></div>
+                    <div class="member--onoff-yesClass"><!--수강 중인 강의가 있을 경우 이 콘텐츠를 보여주세요-->
+                        <div class="member--classDay">
+                            <div class="member--classDay-item on">전체</div><!--이 요소 클릭 시 모든 날짜에 해당되는 강의를 보여주세요. 클릭 후 활성화된 버튼에는 on클래스를 부여해주세요.-->
+                            <div class="member--classDay-item">12.26</div><!--이 요소 클릭 시 12월26일에 해당되는 강의를 보여주세요. 이하 같습니다.-->
+                            <div class="member--classDay-item">12.27</div>
+                            <div class="member--classDay-item">12.28</div>
+                            <div class="member--classDay-item">12.29</div>
+                        </div>
+                        <div class="member--onoff-classList"><!--회원이 신청한 강의 중 종료된 강의를 제외하고 출력됩니다.-->
+                            <div class="member--onoff-classList-title">신청한 강의</div>
+                            <div class="member--onoff-classItem">
+                                <div class="member--onoff-classItem-img">
+                                    <img src="${강사의03번째이미지가들어갑니다}" alt=""><!--강사의 3번째 이미지가 들어갑니다.-->
+                                    <img src="./img/member_person_dummy.png" alt="">
+                                </div>
+                                <div class="member--onoff-classItem-info">
+                                    <div class="member--onoff-classItem-text01"><!--강의분야와 매칭되는 span요소를 출력해주세요.-->
+                                        <span class="colorff380a">특별강좌</span>
+                                        <span class="color0a83ff">인공지능</span>
+                                        <span class="color0052ff">빅데이터</span>
+                                        <span class="colora92144">차세대반도체</span>
+                                        <span class="color5038b9">미래자동차</span>
+                                        <span class="color38b9ae">바이오헬스</span>
+                                        <span class="color73459a">실감미디어</span>
+                                        <span class="color73bcda">지능형로봇</span>
+                                        <span class="color4b8f63">에너지신산업</span>
+                                    </div>
+                                    <div class="member--onoff-classItem-text02">${강의제목 인공지능 프로그래밍의 A부터 Z까지!}</div><!--강의제목이 들어갑니다.-->
+                                    <div class="member--onoff-classItem-text03">
+                                        <p>${강사이름}</p><span></span><p>${강사대학}</p><span></span><p>${강의실}</p><!--예) 김장현 성균관대 A강의실-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text04">
+                                        <p><img src="./img/member_icon_cal.png" alt=""><span>${YY.MM.DD}</span></p><!--강의 날짜를 출력해주세요 예)22.12.26-->
+                                        <p><img src="./img/member_icon_clock.png" alt=""><span> ${AM HH:MM} ~ ${PM HH:MM}</span></p><!--강의 시간을 출력해주세요 예)AM 11:30 ~ PM 13:30-->
+                                    </div>
+                                </div>
                             </div>
-
-
-                            <div class="member--onoff-yesClass">
-                                
+                            <div class="member--onoff-classItem">
+                                <div class="member--onoff-classItem-img">
+                                    <img src="${강사의03번째이미지가들어갑니다}" alt=""><!--강사의 3번째 이미지가 들어갑니다.-->
+                                    <img src="./img/member_person_dummy.png" alt="">
+                                </div>
+                                <div class="member--onoff-classItem-info">
+                                    <div class="member--onoff-classItem-text01"><!--강의분야와 매칭되는 span요소를 출력해주세요.-->
+                                        <span class="colorff380a">특별강좌</span>
+                                    </div>
+                                    <div class="member--onoff-classItem-text02">${강의제목 인공지능 프로그래밍의 A부터 Z까지!}</div><!--강의제목이 들어갑니다.-->
+                                    <div class="member--onoff-classItem-text03">
+                                        <p>${강사이름}</p><span></span><p>${강사대학}</p><span></span><p>${강의실}</p><!--예) 김장현 성균관대 A강의실-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text04">
+                                        <p><img src="./img/member_icon_cal.png" alt=""><span>${YY.MM.DD}</span></p><!--강의 날짜를 출력해주세요 예)22.12.26-->
+                                        <p><img src="./img/member_icon_clock.png" alt=""><span> ${AM HH:MM} ~ ${PM HH:MM}</span></p><!--강의 시간을 출력해주세요 예)AM 11:30 ~ PM 13:30-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member--onoff-classItem">
+                                <div class="member--onoff-classItem-img">
+                                    <img src="${강사의03번째이미지가들어갑니다}" alt=""><!--강사의 3번째 이미지가 들어갑니다.-->
+                                    <img src="./img/member_person_dummy.png" alt="">
+                                </div>
+                                <div class="member--onoff-classItem-info">
+                                    <div class="member--onoff-classItem-text01"><!--강의분야와 매칭되는 span요소를 출력해주세요.-->
+                                        <span class="color73bcda">지능형로봇</span>
+                                    </div>
+                                    <div class="member--onoff-classItem-text02">${강의제목 인공지능 프로그래밍의 A부터 Z까지!}</div><!--강의제목이 들어갑니다.-->
+                                    <div class="member--onoff-classItem-text03">
+                                        <p>${강사이름}</p><span></span><p>${강사대학}</p><span></span><p>${강의실}</p><!--예) 김장현 성균관대 A강의실-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text04">
+                                        <p><img src="./img/member_icon_cal.png" alt=""><span>${YY.MM.DD}</span></p><!--강의 날짜를 출력해주세요 예)22.12.26-->
+                                        <p><img src="./img/member_icon_clock.png" alt=""><span> ${AM HH:MM} ~ ${PM HH:MM}</span></p><!--강의 시간을 출력해주세요 예)AM 11:30 ~ PM 13:30-->
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="member--onoff-showOff">
-
+                        <div class="member--onoff-classList">
+                            <div class="member--onoff-classList-title">종료된 강의</div>
+                            <div class="member--onoff-classItem">
+                                <div class="member--onoff-classItem-img">
+                                    <img src="${강사의03번째이미지가들어갑니다}" alt=""><!--강사의 3번째 이미지가 들어갑니다.-->
+                                    <img src="./img/member_person_dummy.png" alt="">
+                                </div>
+                                <div class="member--onoff-classItem-info">
+                                    <div class="member--onoff-classItem-text01"><!--강의분야와 매칭되는 span요소를 출력해주세요.-->
+                                        <span class="colorff380a">특별강좌</span>
+                                        <span class="color0a83ff">인공지능</span>
+                                        <span class="color0052ff">빅데이터</span>
+                                        <span class="colora92144">차세대반도체</span>
+                                        <span class="color5038b9">미래자동차</span>
+                                        <span class="color38b9ae">바이오헬스</span>
+                                        <span class="color73459a">실감미디어</span>
+                                        <span class="color73bcda">지능형로봇</span>
+                                        <span class="color4b8f63">에너지신산업</span>
+                                    </div>
+                                    <div class="member--onoff-classItem-text02">${강의제목 인공지능 프로그래밍의 A부터 Z까지!}</div><!--강의제목이 들어갑니다.-->
+                                    <div class="member--onoff-classItem-text03">
+                                        <p>${강사이름}</p><span></span><p>${강사대학}</p><span></span><p>${강의실}</p><!--예) 김장현 성균관대 A강의실-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text04">
+                                        <p><img src="./img/member_icon_cal.png" alt=""><span>${YY.MM.DD}</span></p><!--강의 날짜를 출력해주세요 예)22.12.26-->
+                                        <p><img src="./img/member_icon_clock.png" alt=""><span> ${AM HH:MM} ~ ${PM HH:MM}</span></p><!--강의 시간을 출력해주세요 예)AM 11:30 ~ PM 13:30-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text05">강의종료</div>
+                                </div>
+                            </div>
+                            <div class="member--onoff-classItem">
+                                <div class="member--onoff-classItem-img">
+                                    <img src="${강사의03번째이미지가들어갑니다}" alt=""><!--강사의 3번째 이미지가 들어갑니다.-->
+                                    <img src="./img/member_person_dummy.png" alt="">
+                                </div>
+                                <div class="member--onoff-classItem-info">
+                                    <div class="member--onoff-classItem-text01"><!--강의분야와 매칭되는 span요소를 출력해주세요.-->
+                                        <span class="colorff380a">특별강좌</span>
+                                        <span class="color0a83ff">인공지능</span>
+                                        <span class="color0052ff">빅데이터</span>
+                                        <span class="colora92144">차세대반도체</span>
+                                        <span class="color5038b9">미래자동차</span>
+                                        <span class="color38b9ae">바이오헬스</span>
+                                        <span class="color73459a">실감미디어</span>
+                                        <span class="color73bcda">지능형로봇</span>
+                                        <span class="color4b8f63">에너지신산업</span>
+                                    </div>
+                                    <div class="member--onoff-classItem-text02">${강의제목 인공지능 프로그래밍의 A부터 Z까지!}</div><!--강의제목이 들어갑니다.-->
+                                    <div class="member--onoff-classItem-text03">
+                                        <p>${강사이름}</p><span></span><p>${강사대학}</p><span></span><p>${강의실}</p><!--예) 김장현 성균관대 A강의실-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text04">
+                                        <p><img src="./img/member_icon_cal.png" alt=""><span>${YY.MM.DD}</span></p><!--강의 날짜를 출력해주세요 예)22.12.26-->
+                                        <p><img src="./img/member_icon_clock.png" alt=""><span> ${AM HH:MM} ~ ${PM HH:MM}</span></p><!--강의 시간을 출력해주세요 예)AM 11:30 ~ PM 13:30-->
+                                    </div>
+                                    <div class="member--onoff-classItem-text05">강의종료</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="talkButton" class="main--talk"><a href=""><img src="./img/talk_notice.png" alt=""><span>1</span></a></div><!--span = 토크 알림 카운트 숫자-->
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
     <div id="header" class="headerComponent"></div>
     <div id="footer" class="footerComponent"></div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
