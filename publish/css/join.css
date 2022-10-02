@@ -111,15 +111,15 @@ input.join--input:focus{border-color: var(--blue02--);outline: var(--blue02--);}
 
 .join--each-input{padding-top: 40px;border-top:1px solid #3e3e3f ;margin-top: 40px;}
 .join--each-input .join--inputBox{margin-top: 10px;}
-.join--input-select{border-radius: 6px;border: 1px solid var(--bdc--);color: var(--font01--);padding: var(--pd17--) var(--pd24--);line-height: 1;position: relative;margin-top: 12px;cursor: pointer;}
+.join--input-select{border-radius: 6px;border: 1px solid var(--bdc--);color: var(--font01--);line-height: 1;position: relative;margin-top: 12px;}
 .join--input-select.open{border-color: var(--blue02--);}
-.join--input-select-title{display: flex;justify-content: space-between;}
+.join--input-select-title{display: flex;justify-content: space-between;padding: var(--pd17--) var(--pd24--);cursor: pointer;}
 .join--input-select-title span{display: block;width: 8px;height: 8px;border:solid var(--bdc--);border-width: 1px 0 0 1px;transform:rotate(-135deg);}
 .open .join--input-select-title span{transform:translate(0,50%)  rotate(45deg);}
 .join--input-select-option{position: absolute;border-radius: 6px;border: 1px solid var(--bdc--);width:calc(100% + 2px);left: -1px;top: calc(100% + 1px); background-color: var(--black01--);margin-top: 12px;max-height: 200px;overflow: scroll;display: none;z-index: 1;}
 .join--input-select-option::-webkit-scrollbar{display: none;}
 .open .join--input-select-option{display: block;}
-.join--input-select-optionItem{padding: var(--pd17--) var(--pd24--);border-radius: 6px;}
+.join--input-select-optionItem{padding: var(--pd17--) var(--pd24--);border-radius: 6px;cursor: pointer;}
 .join--input-select-optionItem:hover{background-color: #222;}
 .join--input-selectHidden{pointer-events: none;position: absolute;top: 0;left: 0;opacity: 0;}
 @media all and (max-width:767px){
@@ -132,5 +132,22 @@ input.join--input:focus{border-color: var(--blue02--);outline: var(--blue02--);}
 .join--input-alert{font-size: 13px;color: var(--err01--);margin-top: 1em;display: none;}
 .join--input-alert.show{display: block;}
 
-.join--complete-popup{position: fixed;z-index: 60;top: 50%;left: 25%;width: 100%;max-width: 480px;background-color: #fff;transform: translate(-50%,-50%);height: 300px;}
-.join--complete-button{background-color: #555;color: #fff;padding: 12px;width: 120px;}
+.join--complete-popup{display: none;}
+.join--complete-popup{position: fixed;z-index: 60;top: 50%;left: 50%;width: 100%;transform: translate(-50%,-50%);}
+.join--complete-popup-wrap{width: 100%;max-width: 560px;padding: 24px 16px;background-color: #fff;margin: auto;height: 300px;display: flex;flex-direction: column;align-items: center;justify-content: space-between;border-radius: 10px;}
+.join--complete-popup-text{font-size: 20px;font-weight: 600;color: var(--black02--);}
+.join--complete-button{background-color: var(--blue02--);color: #fff;padding:16px 12px;width: 180px;text-align: center;border-radius: 4px;cursor: pointer;display: flex;align-items: center;justify-content: center;}
+
+.join--input-sex{position: absolute;opacity: 0;pointer-events: none;}
+.join--input-sexBox{display: flex;margin-top: 24px;}
+.join--input-sexBox-type{display: flex;align-items: center;margin-right: 20px;font-size: 15px;}
+.join--input-sexBox-type-button{cursor: pointer;display: block;width: 24px;height: 24px;position: relative;border: 2px solid var(--bdc--);border-radius: 50%;margin-right: 8px;}
+.join--input-sexBox-type-button::after{position: absolute;display: block;width: 4px;height: 8px;border: solid #fff;border-width:0 1px 1px 0 ;top: 50%;left: 50%;content: '';transform: translate(-50%,-65%) rotate(45deg);}
+.join--input-sexBox-type.checked .join--input-sexBox-type-button{border-color: var(--blue02--);background-color: var(--blue02--);}
+.join--input-stay{position: absolute;opacity: 0;pointer-events: none;}
+.join--input-stayBox{display: flex;margin-top: 24px;}
+.join--input-stayBox-type{display: flex;align-items: center;margin-right: 20px;font-size: 15px;}
+.join--input-stayBox-type-button{cursor: pointer;display: block;width: 24px;height: 24px;position: relative;border: 2px solid var(--bdc--);border-radius: 50%;margin-right: 8px;}
+.join--input-stayBox-type-button::after{position: absolute;display: block;width: 4px;height: 8px;border: solid #fff;border-width:0 1px 1px 0 ;top: 50%;left: 50%;content: '';transform: translate(-50%,-65%) rotate(45deg);}
+.join--input-stayBox-type.checked .join--input-stayBox-type-button{border-color: var(--blue02--);background-color: var(--blue02--);}
+

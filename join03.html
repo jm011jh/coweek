@@ -64,12 +64,43 @@
                     <div class="join--inputBox"><!--휴대폰번호 인풋-->
                         <div class="join--input-title">휴대폰인증</div>
                         <div class="join--input-phone">
-                            <input type="text" class="join--input" placeholder="'-'없이 숫자만 입력해주세요."></input><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                            <input id="phoneInput" type="text" class="join--input" placeholder="'-'없이 숫자만 입력해주세요."></input><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
                             <div class="join--input-phoneCheck"><!--이 버튼을 누르면 전화번호 인증기능이 실행됩니다. 인증번호가 전송된 후에 .join--input-phonePut 이 요소에 'show'클래스가 추가됩니다.-->
                                 <span>인증요청</span>
                             </div>
                         </div>
                         <div class="join--input-alert">휴대폰번호 입력은 필수입니다.</div><!--인풋에 포커싱 후 입력하지 않거나 인증요청을 완료하지 않을경우 이 요소에 "show" 클래스를 추가해주세요.-->
+                    </div>
+                    <div class="join--inputBox"><!--성별 인풋-->
+                        <div class="join--input-title">성별</div>
+                        <div class="join--input-sex">
+                            <input class="join--input-sexInput" id="checkMale" type="radio" name="checkSex" value="male"><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                            <input class="join--input-sexInput" id="checkFemale" type="radio" name="checkSex" value="female"><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                        </div>
+                        <div class="join--input-sexBox">
+                            <div class="join--input-sexBox-type"><span class="join--input-sexBox-type-button"></span>남</div>
+                            <div class="join--input-sexBox-type"><span class="join--input-sexBox-type-button"></span>여</div>
+                        </div>
+                        <div class="join--input-alert">성별 선택은 필수입니다.</div><!--인풋에 포커싱 후 입력하지 않거나 인증요청을 완료하지 않을경우 이 요소에 "show" 클래스를 추가해주세요.-->
+                    </div>
+                    <div class="join--inputBox"><!--숙박 인풋-->
+                        <div class="join--input-title">숙박 여부</div>
+                        <div class="join--input-stay">
+                            <input class="join--input-stayInput" id="checkStay" type="radio" name="checkStay" value="stay"><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                            <input class="join--input-stayInput" id="checkNotStay" type="radio" name="checkStay" value="notStay"><!--회원의 휴대폰번호값입니다. 숫자만 입력되게 해주세요-->
+                        </div>
+                        <div class="join--input-stayBox">
+                            <div class="join--input-stayBox-type"><span class="join--input-stayBox-type-button"></span>참여</div>
+                            <div class="join--input-stayBox-type"><span class="join--input-stayBox-type-button"></span>불참</div>
+                        </div>
+                        <div class="join--input-alert">숙박여부 선택은 필수입니다.</div><!--인풋에 포커싱 후 입력하지 않거나 인증요청을 완료하지 않을경우 이 요소에 "show" 클래스를 추가해주세요.-->
+                    </div>
+                    <div class="join--inputBox"><!--거주지 인풋-->
+                        <div class="join--input-title">거주지 입력</div>
+                        <div class="join--input-phone">
+                            <input id="adressInput" type="text" class="join--input" placeholder="거주지 주소를 정확히 입력해주세요 시,군,구"></input>
+                        </div>
+                        <div class="join--input-alert">거주지 입력은 필수입니다.</div><!--인풋에 포커싱 후 입력하지 않거나 인증요청을 완료하지 않을경우 이 요소에 "show" 클래스를 추가해주세요.-->
                     </div>
                     <div class="join--input-phonePut">
                         <input class="join--input" placeholder="인증 번호 입력"></input>
@@ -98,7 +129,7 @@
                                         형제요소(.join--input-select-option)의 자식요소(.join--input-select-optionItem)를 클릭 시
                                         상위요소인 (.join--input-select)에 추가됐던 클래스"open"를 지워주세요.
                                         그 외에 요소(바깥요소들) 클릭 시에도 동일합니다-->
-                                    <p>분야를 선택해주세요</p><span class="arrow"></span>
+                                    <p class="join--input-select-show">분야를 선택해주세요</p><span class="arrow"></span>
                                 </div>
                                 <div class="join--input-select-option">
                                     <div class="join--input-select-optionItem">분야1</div><!--옵션의 값들만큼 만들어주세요-->
@@ -126,7 +157,7 @@
                                         형제요소(.join--input-select-option)의 자식요소(.join--input-select-optionItem)를 클릭 시
                                         상위요소인 (.join--input-select)에 추가됐던 클래스"open"를 지워주세요.
                                         그 외에 요소(바깥요소들) 클릭 시에도 동일합니다-->
-                                    <p>학교를 선택해주세요</p><span class="arrow"></span>
+                                    <p class="join--input-select-show">학교를 선택해주세요</p><span class="arrow"></span>
                                 </div>
                                 <div class="join--input-select-option open">
                                     <div class="join--input-select-optionItem">코위크대학교1</div><!--옵션의 값들만큼 만들어주세요-->
@@ -178,8 +209,11 @@
     <div id="header" class="headerComponent"></div>
     <div id="footer" class="footerComponent"></div>
     <div id="joinComplete" class="join--complete-popup"><!--임시 디자인입니다.-->
-        회원가입이 완료되었습니다.
-        <div id="joinBackToMain" class="join--complete-button">메인으로</div><!--이 버튼을 클릭 시 로그인 된 상태로 메인으로 돌아가게 해주세요.-->
+        <div class="join--complete-popup-wrap">
+            <span></span>
+            <p class="join--complete-popup-text">회원가입이 완료됐습니다.</p>
+            <div id="joinBackToMain" class="join--complete-button">메인으로</div><!--이 버튼을 클릭 시 로그인 된 상태로 메인으로 돌아가게 해주세요.-->
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

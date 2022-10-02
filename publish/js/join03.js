@@ -16,6 +16,61 @@ function passwordCheck01(e){
         // good
     }
 }
-
-
 passwordInput01.addEventListener("input", passwordCheck01)
+
+
+const checkMale = document.getElementById("checkMale")
+const checkFemale = document.getElementById("checkFemale")
+const sexCheckBox = document.querySelectorAll(".join--input-sexBox-type")
+const sexCheckInput = document.querySelectorAll(".join--input-sexInput")
+
+const checkStay = document.getElementById("checkNotStay")
+const checkNotStay = document.getElementById("checkNotStay")
+const stayCheckBox = document.querySelectorAll(".join--input-stayBox-type")
+const stayCheckInput = document.querySelectorAll(".join--input-stayInput")
+sexCheckBox.forEach(function(el,i){
+    el.addEventListener('click',function(){
+
+        for ( item of sexCheckBox ) { item.classList.remove("checked") }
+
+        !el.classList.contains("checked")
+        ?el.classList.add("checked")
+        :el.classList.remove("checked")
+        for ( item of sexCheckInput ) { item.removeAttribute("checked") }
+        sexCheckInput[i].setAttribute("checked","checked")
+    })
+})
+stayCheckBox.forEach(function(el,i){
+    el.addEventListener('click',function(){
+
+        for ( item of stayCheckBox ) { item.classList.remove("checked") }
+
+        !el.classList.contains("checked")
+        ?el.classList.add("checked")
+        :el.classList.remove("checked")
+
+        for ( item of stayCheckInput ) { item.removeAttribute("checked") }
+        stayCheckInput[i].setAttribute("checked","checked")
+    })
+})
+
+const joinSelectTitle = document.querySelectorAll(".join--input-select-title")
+const joinSelectOps = document.querySelectorAll(".join--input-select-optionItem")
+
+joinSelectTitle.forEach((el) => {
+    el.addEventListener('click',function(){
+        let parent = el.closest(".join--input-select")
+        !parent.classList.contains("open")
+        ?parent.classList.add("open")
+        :parent.classList.remove("open")
+    })
+})
+joinSelectOps.forEach((el) => {
+    el.addEventListener('click',function(){
+        let box = el.closest(".join--input-select")
+        let showTitle = box.querySelector(".join--input-select-show")
+        showTitle.innerHTML = el.innerHTML
+        box.classList.remove("open")
+    })
+})
+
