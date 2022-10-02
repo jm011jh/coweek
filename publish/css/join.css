@@ -46,6 +46,7 @@ option{color: var(--font01--);}
 .join--body-title{margin-bottom: 20px;font-weight: 600;}
 .join--body-text01{font-size: var(--small--);color: #fff;}
 
+.join--checkFinal{display: flex;align-items: center;line-height: 1;}
 .join--checkAll{display: flex;align-items: center;line-height: 1;}
 .join--checkOnly{display: flex;align-items: center;line-height: 1;width: calc(100% - 40px);margin: 0 auto;cursor: pointer;}
 .join--checkOnly:not(:last-child){margin-bottom: 12px;}
@@ -58,6 +59,11 @@ option{color: var(--font01--);}
 .join--checkAll.checked .join--checkText{color: #fff;}
 .join--checkAll.checked .join--checkIcon{background-color: var(--blue02--);border-color: var(--blue02--);}
 .join--checkAll.checked .join--checkIcon:after{border-color:#fff;}
+
+.join--checkFinal.checked{border: 1px solid #181d28;background-color:#1f2739;}
+.join--checkFinal.checked .join--checkText{color: #fff;}
+.join--checkFinal.checked .join--checkIcon{background-color: var(--blue02--);border-color: var(--blue02--);}
+.join--checkFinal.checked .join--checkIcon:after{border-color:#fff;}
 
 .join--checkOnly.checked{border: 1px solid #181d28;background-color: #181d28;}
 .join--checkOnly.checked .join--checkText{color: #fff;}

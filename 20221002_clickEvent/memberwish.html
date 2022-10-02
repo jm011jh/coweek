@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./publish/css/public.css">
+    <link rel="stylesheet" href="./publish/css/member.css">
+</head>
+
+<body>
+    <div class="public--container">
+        <div class="member--wrap">
+            <div class="member--aside"> 
+                <div class="member--aside-hello"><p>안녕하세요,&nbsp;</p><span>${이름}</span>님!</div><!--이 곳에 이름이 들어갑니다.-->
+                <div class="member--aside-myInfo">
+                    <div class="member--aside-myInfo-img" style="background-image: url(${회원이미지가들어갑니다})"><!--이 요소의 style:backgrund-image에 회원이 지정한 이미지가 들어갑니다.-->
+                        <a href="회원이미지변경"><img src="./img/member_icon_blueclip.png" alt=""></a>
+                    </div>
+                    <div class="member--aside-myInfo-text">
+                        <div class="member--aside-myInfo-name"><p>${이름}</p><span></span></div>
+                        <div class="member--aside-myInfo-id"><p>${id@domain.com}</p></div><!--여기에 아이디가 들어갑니다.-->
+                    </div>
+                </div>
+                <div class="member--aside-menu">
+                    <div class="member--aside-menuItem"><a href="./member.html"><img src="./img/member_icon_aside04.png" alt=""><p>내 강의 보기</p><span></span></a></div>
+                    <div class="member--aside-menuItem on"><a href="./memberwish.html"><img src="./img/member_icon_aside02.png" alt=""><p>위시 리스트</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="/memberask.html"><img src="./img/member_icon_aside01.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
+                </div>
+            </div>
+            <div class="member--contents">
+                <div class="member--contents-wrap member--contents-wrap02">
+                    <div class="member--title-text">
+                        <p>위시리스트 💕</p>
+                        <div class="member--title-text02" style="display:none;">위시리스트 강의를 확인해 보세요</div><!--강의가 없으면 이 요소는 display:none해주세요.-->
+                    </div>
+                    <!--강의가 있을 경우 member--wish를 출력, 없을 경우 member--noWish를 출력-->
+                    <div class="member--wish"><!--강의가 없으면 이 요소는 display:none해주세요.-->
+                        <div class="member--wish-wrap">
+                            <div class="member--wish-item">
+                                <div class="member--wish-thumb">
+                                    <div class="member--wish-thumb-img" >
+                                        <a href="${여기에해당강의상세페이지경로}" class="member--wish-thumb-imgBg" style="background-image: url(여기에강의썸네일이미지경로);"></a>
+                                        <div class="member--wish-like"><img src="./img/member_icon_like.png" alt=""></div>
+                                    </div>
+                                    <div class="member--wish-onoff">
+                                        <div class="member--wish-on on">ON-LINE</div><!--온라인의 경우 이 요소에 on클래스 부여-->
+                                        <div class="member--wish-off on">OFF-LINE</div><!--오프라인의 경우 이 요소에 on클래스 부여-->
+                                    </div>
+                                </div>
+                                <div class="member--wish-text">
+                                    <p>${강의제목이들어갑니다}</p>
+                                </div>
+                            </div>
+                            <div class="member--wish-item">
+                                <div class="member--wish-thumb">
+                                    <div class="member--wish-thumb-img" >
+                                        <a href="${여기에해당강의상세페이지경로}" class="member--wish-thumb-imgBg" style="background-image: url(여기에강의썸네일이미지경로);"></a>
+                                        <div class="member--wish-like"><img src="./img/member_icon_like.png" alt=""></div>
+                                    </div>
+                                    <div class="member--wish-onoff">
+                                        <div class="member--wish-on on">ON-LINE</div><!--온라인의 경우 이 요소에 on클래스 부여-->
+                                        <div class="member--wish-off on">OFF-LINE</div><!--오프라인의 경우 이 요소에 on클래스 부여-->
+                                    </div>
+                                </div>
+                                <div class="member--wish-text">
+                                    <p>${강의제목이들어갑니다}</p>
+                                </div>
+                            </div>
+                            <div class="member--wish-item">
+                                <div class="member--wish-thumb">
+                                    <div class="member--wish-thumb-img" >
+                                        <a href="${여기에해당강의상세페이지경로}" class="member--wish-thumb-imgBg" style="background-image: url(여기에강의썸네일이미지경로);"></a>
+                                        <div class="member--wish-like"><img src="./img/member_icon_like.png" alt=""></div>
+                                    </div>
+                                    <div class="member--wish-onoff">
+                                        <div class="member--wish-on on">ON-LINE</div><!--온라인의 경우 이 요소에 on클래스 부여-->
+                                        <div class="member--wish-off on">OFF-LINE</div><!--오프라인의 경우 이 요소에 on클래스 부여-->
+                                    </div>
+                                </div>
+                                <div class="member--wish-text">
+                                    <p>${강의제목이들어갑니다}</p>
+                                </div>
+                            </div>
+                            <div class="member--wish-item">
+                                <div class="member--wish-thumb">
+                                    <div class="member--wish-thumb-img" >
+                                        <a href="${여기에해당강의상세페이지경로}" class="member--wish-thumb-imgBg" style="background-image: url(여기에강의썸네일이미지경로);"></a>
+                                        <div class="member--wish-like"><img src="./img/member_icon_like.png" alt=""></div>
+                                    </div>
+                                    <div class="member--wish-onoff">
+                                        <div class="member--wish-on on">ON-LINE</div><!--온라인의 경우 이 요소에 on클래스 부여-->
+                                        <div class="member--wish-off on">OFF-LINE</div><!--오프라인의 경우 이 요소에 on클래스 부여-->
+                                    </div>
+                                </div>
+                                <div class="member--wish-text">
+                                    <p>${강의제목이들어갑니다}</p>
+                                </div>
+                            </div>
+                            <div class="member--wish-item">
+                                <div class="member--wish-thumb">
+                                    <div class="member--wish-thumb-img" >
+                                        <a href="${여기에해당강의상세페이지경로}" class="member--wish-thumb-imgBg" style="background-image: url(여기에강의썸네일이미지경로);"></a>
+                                        <div class="member--wish-like"><img src="./img/member_icon_like.png" alt=""></div>
+                                    </div>
+                                    <div class="member--wish-onoff">
+                                        <div class="member--wish-on on">ON-LINE</div><!--온라인의 경우 이 요소에 on클래스 부여-->
+                                        <div class="member--wish-off on">OFF-LINE</div><!--오프라인의 경우 이 요소에 on클래스 부여-->
+                                    </div>
+                                </div>
+                                <div class="member--wish-text">
+                                    <p>${강의제목이들어갑니다}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member--noWish">
+                        <div class="member--noWish-img"><img src="./img/member_nowish.png" alt=""></div>
+                        <div class="member--noWish-text">위시리스트 강의가 없습니다.</div>
+                        <a class="member--ask-noask-toWrite" href="/memberaskwrite.html">1:1 문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <div class="member--wishAsk-popup" id="wishAskPopup">정말로 지우시겠습니까?
+        <div id="wishAskDeleteCancel" class="member--wishAsk-popup-button">안지울래요</div>
+        <div id="wishAskDeleteGo" class="member--wishAsk-popup-button">지우겠습니다</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/memberwish.js"></script>
+</body>
+</html>

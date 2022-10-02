@@ -45,7 +45,7 @@
 .list--classListItem:not(:nth-child(4n)){margin-right: 20px;}
 .list--classListItem-thumb{position: relative;}
 .list--classListItem-thumb-bg{padding-top: 85%;background-color: #aaa;border-radius: 10px;display: block;}
-.list--classListItem-thumb-like{position: absolute;right: 10px;top: 10px;}
+.list--classListItem-thumb-like{position: absolute;right: 10px;top: 10px;cursor: pointer;}
 .list--classListItem-thumb-onoff{position: absolute;left: 10px;top: 10px;}
 .list--classListItem-thumb-on,
 .list--classListItem-thumb-off{color: #fff;font-size: 11px;padding: 8px;border-radius: 4px;}

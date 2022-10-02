@@ -100,7 +100,7 @@
 .member--wish-item{width: calc(25% - 60px/4);margin-bottom: 40px;}
 .member--wish-item:not(:nth-child(4n)){margin-right: 20px;}
 .member--wish-thumb{position: relative;}
-.member--wish-thumb-img{padding-top: 85%;background-color: #fff;position: relative;border-radius: 10px;}
+.member--wish-thumb-imgBg{padding-top: 85%;background-color: #fff;position: relative;border-radius: 10px;display: block;}
 .member--wish-like{cursor: pointer;position: absolute;bottom: 10px;right: 10px;width: 40px;}
 .member--wish-like img{display: block;width:100%;}
 .member--wish-onoff{position: absolute;top: 10px;left: 10px;}
@@ -180,3 +180,7 @@
     .member--onoff-classItem-img{margin:0 auto 20px;}
     .member--onoff-classItem-info{margin: 0 auto;width: 100%;}
 }
+
+.member--wishAsk-popup{position:fixed;top: 50%;left: 0;background-color: #fff;width: 200px;height: 100px;z-index: 70;display: none;}
+.member--wishAsk-popup.show{display: block;}
+.member--wishAsk-popup-button{cursor: pointer;}

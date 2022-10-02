@@ -41,19 +41,19 @@
                     <div class="join--inputBox"><!--비밀번호 인풋-->
                         <div class="join--input-title">비밀번호</div>
                         <div class="join--input-pw">
-                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호값입니다.-->
+                            <input id="passwordInput01" type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호값입니다.-->
                             <div class="join--input-pw-show"><!--이 버튼을 누르면 비밀번호input type을 text로 변경해주세요. 부모요소인 .join--input-pw에 visible 클래스 토글 기능 달아주세요-->
                                 <img class="visible" src="./img/join_icon_visible.png" alt="">
                                 <img class="invisible" src="./img/join_icon_invisible.png" alt="">
                             </div>
                         </div>
                         <div class="join--input-exp">영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</div>
-                        <div class="join--input-alert">8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</div>
+                        <div id="passwordInput01State" class="join--input-alert">8~32자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</div>
                     </div>
                     <div class="join--inputBox"><!--비밀번호확인 인풋-->
                         <div class="join--input-title">비밀번호 확인</div>
                         <div class="join--input-pw">
-                            <input type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호입력값을 중복체크합니다.-->
+                            <input id="passwordInput02" type="password" class="join--input" placeholder=""></input><!--회원의 비밀번호입력값을 중복체크합니다.-->
                             <div class="join--input-pw-show"><!--이 버튼을 누르면 비밀번호input type을 text로 변경해주세요. 부모요소인 .join--input-pw에 visible 클래스 토글 기능 달아주세요-->
                                 <img class="visible" src="./img/join_icon_visible.png" alt="">
                                 <img class="invisible" src="./img/join_icon_invisible.png" alt="">
@@ -185,6 +185,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./publish/js/get_component.js"></script>
     <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/join03.js"></script>
     <!--
         인풋요소에 focusout 했을 때 조건값을 충족하지 않는 경우 join--input-alert에 show클래스를 추가해주세요.
     -->

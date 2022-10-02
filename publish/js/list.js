@@ -8,6 +8,10 @@ const listSortWherePop = document.getElementById("listSortWherePop")
 const listSortWhereClose = document.getElementById("listSortWhereClose")
 const listSortWhereReset = document.getElementById("listSortWhereReset")
 
+const listSortClassSelectAll = document.getElementById("listSortClassSelectAll")
+
+
+
 listSortOpenClass.addEventListener("click",function(){
     if(!listSortOpenClass.classList.contains("open")){
         listSortOpenClass.classList.add("open")
@@ -76,4 +80,16 @@ document.querySelector(".list--head-sort-reset").addEventListener('click',functi
     for(item of selectItemDummy){
         item.classList.remove("checked")
     }
+
+    listSortOpenClass.classList.remove("open")
+    listSortClassPop.classList.remove("open")
+    listSortOpenWhere.classList.remove("open")
+    listSortWherePop.classList.remove("open")
+})
+
+listSortClassSelectAll.addEventListener("click",function(){
+    listSortOpenClass.classList.remove("open")
+    listSortClassPop.classList.remove("open")
+    listSortOpenWhere.classList.remove("open")
+    listSortWherePop.classList.remove("open")
 })

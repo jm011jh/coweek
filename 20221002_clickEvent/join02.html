@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./publish/css/public.css">
+        <link rel="stylesheet" href="./publish/css/join.css">
+    </head>
+<body>
+    <div class="public--container">
+        <div class="join--container join02">
+            <div class="join--wrap">
+                <div class="join--head">
+                    <div class="join--head-text">
+                        <div class="join--head-text01">CO-WEEK에<br>방문해주셔서 감사합니다.</div>
+                        <div class="join--head-text02">본인이 소속된 조직(학교, 직장인 등)에 맞게<br>선택 후 가입해주세요.</div>
+                    </div>
+                    <div class="join--head-index">
+                        <span class="join--head-index-span join--head-index-spanDone"></span>
+                        <span class="join--head-index-span join--head-index-spanNow">2</span>
+                        <span class="join--head-index-span"></span>
+                    </div>
+                </div>
+                <div class="join--persent">
+                    <span class="step02"></span>
+                </div>
+                <div class="join--body">
+                    <div class="join--input join--checkOnly"><!--이 join--checkOnly요소는 한가지만 체크할 수 있습니다.-->
+                        <div class="join--checkIcon"></div><!--이 체크박스를 체크하면 이 부모요소join--checkAll에게 checked 클래스를 부여해주세요.-->
+                        <div class="join--checkText">Coss 재학생</div>
+                    </div>
+                    <div class="join--input join--checkOnly">
+                        <div class="join--checkIcon"></div><!--이 체크박스를 체크하면 이 부모요소join--checkAll에게 checked 클래스를 부여해주세요.-->
+                        <div class="join--checkText">공동활용 재학생</div>
+                    </div>
+                    <div class="join--input join--checkOnly">
+                        <div class="join--checkIcon"></div><!--이 체크박스를 체크하면 이 부모요소join--checkAll에게 checked 클래스를 부여해주세요.-->
+                        <div class="join--checkText">일반 수강자</div>
+                    </div>
+                    <div class="join--done-button"><span>확인</span></div><!--이 요소를 클릭하면 다음 단계(join03.html)로 이동합니다. -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/join02.js"></script>
+</body>
+</html>
