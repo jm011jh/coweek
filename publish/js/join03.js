@@ -74,3 +74,25 @@ joinSelectOps.forEach((el) => {
     })
 })
 
+const passwordInput01show = document.getElementById("passwordInput01show")
+const passwordInput02show = document.getElementById("passwordInput02show")
+passwordInput01show.addEventListener('click',function(){
+    if(!passwordInput01show.classList.contains("visible")){
+        passwordInput01show.classList.add("visible")
+        passwordInput01.setAttribute("type","text")
+    } else {
+        passwordInput01show.classList.remove("visible")
+        passwordInput01.setAttribute("type","password")
+    }
+})
+passwordInput02show.addEventListener('click',function(){
+    if(!passwordInput02show.classList.contains("visible")){
+        passwordInput02show.classList.add("visible")
+        passwordInput02.setAttribute("type","text")
+    } else {
+        passwordInput02show.classList.remove("visible")
+        passwordInput02.setAttribute("type","password")
+    }
+})
+
+

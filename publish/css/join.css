@@ -94,10 +94,10 @@ input.join--input:focus{border-color: var(--blue02--);outline: var(--blue02--);}
 .join--input-pw-show{position:absolute;top: 60%;left: calc(100% - var(--pd24--));transform: translate(-100%,-80%);cursor: pointer;}
 .join--input-phoneCheck{position:absolute;top: 50%;left: calc(100% - var(--pd24--));transform: translate(-100%,-50%);cursor: pointer;color: #fff;font-size: 12px;padding: 11px 20px;border-radius: 20px;background-color: var(--grayBlue3--);}
 .join--input-phoneCheckPut{position:absolute;top: 50%;left: calc(100% - var(--pd24--));transform: translate(-100%,-50%);cursor: pointer;color: #fff;font-size: 12px;padding: 11px 20px;border-radius: 20px;background-color: var(--grayBlue3--);}
-.join--input-pw img.visible{display: none;}
+.join--input-pw img.visible{display: none;transform: translate(-1px,-2px);}
 .join--input-pw img.invisible{display: block;}
-.join--input-pw.visible img.visible{display: block;}
-.join--input-pw.visible img.invisible{display: none;}
+.join--input-pw .visible img.visible{display: block;}
+.join--input-pw .visible img.invisible{display: none;}
 .join--input-phone{position:relative}
 .join--input-phonePut{position: relative;display: none;}
 .join--input-phonePut.show{display: block;}
