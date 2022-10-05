@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./publish/css/public.css">
+    <link rel="stylesheet" href="./publish/css/board.css">
+</head>
+
+<body>
+    <div class="public--container board--container">
+        <div class="board--wrap">
+            <div class="board--title">공지사항</div>
+            <div class="board--view-h2">공지제목입니다.</div>
+            <div class="board--view-h3">
+                <p class="board--view-h3-user">작성자이름</p>
+                <p class="board--view-h3-date">YY.MM.DD HH:MM</p><!--작성 날짜-->
+            </div>
+            <div class="board--view-p">
+                작성한 내용이 이 곳에 출력됩니다.
+            </div>
+            <ul class="board--view-nav">
+                <li class="board--view-prev">
+                    <div class="board--view-guide"><span></span><p>이전글</p></div>
+                    <div class="board--view-title">이전 글의 제목입니다.</div>
+                    <div class="board--view-date">YY.MM.DD</div>
+                </li>
+                <li class="board--view-next">
+                    <div class="board--view-guide"><span></span><p>다음글</p></div>
+                    <div class="board--view-title">이전 글의 제목입니다.</div>
+                    <div class="board--view-date">YY.MM.DD</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/main.js"></script>
+</body>
+
+</html>

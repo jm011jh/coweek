@@ -190,7 +190,7 @@
 .member--fix-form input::placeholder{font-size: 16px;color: #aaa;}
 .member--fix-form input{font-size: 16px;color: #fff;background-color: rgba(0,0,0,0);outline: none;border: 0px solid #000;}
 .member--fix-form input:focus{background-color: rgba(0,0,0,0);outline: none;border: 0px solid #000;}
-.member--aside-menuItem02{margin-top: 30px;width: 100%;}
+.member--aside-menuItem02{margin-top: 30px;}
 .member--aside-menuItem02 a{display: flex;font-size: 13px;color: #9aa5ba;align-items: center;}
 .member--aside-menuItem02 a img{margin-right: 14px;display: block;}
 .member--fix-impossible{font-size: 15px;margin-top: 28px;}

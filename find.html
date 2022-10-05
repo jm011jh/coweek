@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./publish/css/public.css">
+        <link rel="stylesheet" href="./publish/css/join.css">
+        <link rel="stylesheet" href="./publish/css/login.css">
+    </head>
+<body>
+    <div class="public--container">
+        <div class="join--container join01 login--container">
+            <div class="join--wrap">
+                <div class="member--head">
+                    <div class="member--head-text">
+                        <div class="find--head-text01">비밀번호 찾기</div>
+                    </div>
+                    <div class="find--head-text02">
+                        가입하신 이메일 주소를 입력해주세요. <br>
+                        이메일 주소로 비밀번호를 재설정할 수 있는 이메일을 보내드립니다. <br>
+                        발송된 이메일의 비밀번호 재설정은 10분 간 유효합니다.
+                    </div>
+                </div>
+                <div class="join--persent">
+                    <span class="step03"></span>
+                </div>
+                <div class="join--body">
+                    <form action="">
+                        <div class="login--inputForm">
+                            <input type="text" placeholder="이메일 주소">
+                        </div>
+                        <input type="submit" class="login--submit" value="전송하기">
+                    </form>
+                    <div class="login--goToJoin">
+                        <a href="/join01.html">로그인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/loginClick.js"></script>
+</body>
+</html>

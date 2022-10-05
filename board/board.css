@@ -1,0 +1,40 @@
+.public--container{width: 100%;padding: 0 36px;color: #fff;}
+
+.board--container{padding-top: 120px;margin-bottom: 240px;}
+.board--wrap{width: 100%;max-width: 1280px;margin: auto;}
+.board--title{font-weight: 700;font-size: 40px;padding-bottom: 1em;border-bottom: 2px solid #fff;}
+
+.board--list{border-bottom: 1px solid #fff;}
+.board--listItem{display: flex;padding: 22px 0;}
+.board--listItem01{border-bottom: 1px solid rgba(255,255,255,0.2);font-weight: 700;}
+.board--listItem02{cursor: pointer;}
+.board--listItem02:not(:last-child){border-bottom: 1px solid rgba(255,255,255,0.5);}
+.board--listItem01 .board--listItem-title{text-align: center;}
+.board--listItem-id{width: 50px;text-align: center;color: #aaa;}
+.board--listItem-id span{font-weight: 700;}
+.board--listItem-title{width: calc(100% - 285px);}
+.board--listItem-user{width: 120px;text-align: center;font-weight: 700;}
+.board--listItem-date{width: 70px;text-align: center;color: #aaa;}
+.board--listItem-count{width: 45px;text-align: center;color: #aaa;}
+
+.board--listItem01 .board--listItem-id,
+.board--listItem01 .board--listItem-date,
+.board--listItem01 .board--listItem-count{color: #fff;}
+
+/* boardview */
+
+.board--view-h2{font-size: 24px;font-weight: 600;padding: 1em 0;border-bottom:1px solid#aaa;}
+.board--view-h3{display: flex;justify-content: space-between;padding: 1em 0;border-bottom: 1px solid #aaa;}
+.board--view-h3-user{font-weight: 600;}
+.board--view-h3-date{color: rgba(255,255,255,0.7);}
+.board--view-p{padding-top: 80px;font-size: 16px;padding-bottom: 40px;border-bottom: 1px solid #fff;}
+
+.board--view-nav{margin-top:40px;border: solid rgba(255,255,255,0.2);border-width: 1px 0 1px 0;}
+.board--view-nav li{display: flex;padding: 18px 0;font-size: 13px;}
+.board--view-prev{border-bottom: 1px solid rgba(255,255,255,0.2);}
+.board--view-guide{display: flex;align-items: center;color: rgba(255,255,255,0.7);width: 70px;justify-content: center;}
+.board--view-guide span{width: 6px;height: 6px;border: solid rgba(255,255,255,0.7);display: block;margin-right: 4px;}
+.board--view-title{width: calc(100% - 170px);}
+.board--view-date{width: 100px;text-align: center;}
+.board--view-prev .board--view-guide span{transform:translate(0,25%) rotate(-45deg) ;border-width: 1px 1px 0 0;}
+.board--view-next .board--view-guide span{transform:translate(0,-25%) rotate(135deg) ;border-width: 1px 1px 0 0;}

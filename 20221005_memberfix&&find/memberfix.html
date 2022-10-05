@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./publish/css/public.css">
+    <link rel="stylesheet" href="./publish/css/member.css">
+</head>
+
+<body>
+    <div class="public--container">
+        <div class="member--wrap">
+            <!--aside에 메뉴가 하나 추가되었습니다. 확인 후에 member페이지별로 각가 적용 부탁드립니다.-->
+            <div class="member--aside"> 
+                <div class="member--aside-hello"><p>안녕하세요,&nbsp;</p><span>${이름}</span>님!</div><!--이 곳에 이름이 들어갑니다.-->
+                <div class="member--aside-myInfo">
+                    <div class="member--aside-myInfo-img" style="background-image: url(${회원이미지가들어갑니다})"><a href="회원이미지변경"><img src="./img/member_icon_blueclip.png" alt=""></a></div>
+                    <div class="member--aside-myInfo-text">
+                        <div class="member--aside-myInfo-name"><p>${이름}</p><span></span></div>
+                        <div class="member--aside-myInfo-id"><p>${id@domain.com}</p></div><!--여기에 아이디가 들어갑니다.-->
+                    </div>
+                </div>
+                <div class="member--aside-menu">
+                    <div class="member--aside-menuItem on"><a href="./member.html"><img src="./img/member_icon_aside04.png" alt=""><p>내 강의 보기</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="./memberwish.html"><img src="./img/member_icon_aside02.png" alt=""><p>위시 리스트</p><span></span></a></div>
+                    <div class="member--aside-menuItem"><a href="/memberask.html"><img src="./img/member_icon_aside01.png" alt=""><p>1:1 문의사항</p><span></span></a></div>
+
+                    <!--이 요소가 추가되었습니다.-->
+                    <div class="member--aside-menuItem02"><a href="/memberfix.html">
+                        <div class="member--aside-menuItem02-icon"><img src="/img/icon_member_fix.png" alt=""></div>
+                        <p>회원정보 수정</p>
+                    </a></div>
+
+                </div>
+            </div>
+            <div class="member--contents">
+                <div class="member--contents-wrap03">
+                    <!--member.html 과 동일하되, 하위요소부터는 다릅니다.-->
+                    <div class="member--title-text"><p>회원정보 수정👾</p></div>
+                    <form class="member--fix-form" action="">
+
+                    <!--수정불가능 항목-->
+                    <div class="member--fix-impossible">
+                        <p class="member--fix-impossible-text">이름</p>
+                        <div class="member--fix-impossibleBox">
+                            <p>${회원이름}</p>
+                            <span class="dummy"></span>
+                        </div>
+                    </div>
+
+                    <div class="member--fix-impossible">
+                        <p class="member--fix-impossible-text">아이디 (이메일)</p>
+                        <div class="member--fix-impossibleBox">
+                            <p>${회원@이메일}</p>
+                            <span class="dummy"></span>
+                        </div>
+                    </div>
+
+                    <div class="member--fix-impossible">
+                        <p class="member--fix-impossible-text">휴대전화</p>
+                        <div class="member--fix-impossibleBox">
+                            <p>${회원전화}</p>
+                            <span class="greenCheck"></span>
+                        </div>
+                    </div>
+
+                    <!--여기서부터 수정 가능 영역입니다.-->
+                    <div class="member--fix-impossible">
+                        <p class="member--fix-impossible-text">비밀번호</p>
+                        <div class="member--fix-impossibleBox">
+                            <div class="member--fix-possibleBoxSpan">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="member--fix-password">
+                            <div class="member--fix-password-row">
+                                <div class="member--fix-possibleBox">
+                                    <input class="memberFixNewPassword" id="passwordNew" type="password" placeholder="신규 비밀번호" >
+                                    <div id="passwordNewShow" class="member--fix-password-icon">
+                                        <img class="invisible" src="/img/join_icon_invisible.png" alt="">
+                                        <img class="visible" src="/img/join_icon_visible.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="member--fix-password-row">
+                                <div class="member--fix-possibleBox">
+                                    <input class="memberFixNewPasswordRe" id="passwordNewRe" type="password" placeholder="신규 비밀번호 확인" >
+                                    <div id="passwordNewReShow" class="member--fix-password-icon">
+                                        <img class="invisible" src="/img/join_icon_invisible.png" alt="">
+                                        <img class="visible" src="/img/join_icon_visible.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="member--fix-password-fixButton"><p>비밀번호 변경</p></div>
+                            </div>
+                            <div class="member--fix-password-desc">
+                                <p>영문 대·소문자/숫자/특수문자 중 2가지 이상 조합, 8자~32자</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member--fix-checkWrap">
+
+                        <div class="member--fix-check">
+                            <div class="member--fix-check-text"><p>성별</p></div>
+                            <div class="member--fix-checkBoxWrap">
+                                <div id="memberFixCheckMale" class="member--fix-checkBox"><!--회원정보가 남자면 이 요소에 checked 클래스를 부여해주세요-->
+                                    <span></span>
+                                    <p>남</p>
+                                    <input class="inputHide inputHideSexMale" type="radio" name="chk_sex" value="" ><!--회원정보가 남자면 이 input요소에 checked attribute를 추가해주세요-->
+                                </div>
+                                <div id="memberFixCheckFemale" class="member--fix-checkBox checked"><!--회원정보가 여자면 이 요소에 checked 클래스를 부여해주세요-->
+                                    <span></span>
+                                    <p>여</p>
+                                    <input class="inputHide inputHideSexFemale" type="radio" name="chk_sex" value="" checked><!--회원정보가 여자면 이 input요소에 checked attribute를 추가해주세요-->
+                                    <!--radio타입input이 DB수정에 불필요하다면 지워주셔도 좋습니다.-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="member--fix-check">
+                            <div class="member--fix-check-text"><p>숙박 지원 필요 여부</p></div>
+                            <div class="member--fix-checkBoxWrap">
+                                <div id="memberFixCheckStay" class="member--fix-checkBox checked"><!--회원정보 중 숙박 O인 경우 요소에 checked 클래스를 부여해주세요-->
+                                    <span></span>
+                                    <p>O</p>
+                                    <input class="inputHide inputHideStay" type="radio" name="chk_stay" value="" checked><!--회원정보 중 숙박이 O인 경우 이 input요소에 checked attribute를 추가해주세요-->
+                                </div>
+                                <div id="memberFixCheckLeave" class="member--fix-checkBox"><!--회원정보 중 숙박 X인 경우 요소에 checked 클래스를 부여해주세요-->
+                                    <span></span>
+                                    <p>X</p>
+                                    <input class="inputHide inputHideLeave" type="radio" name="chk_stay" value=""><!--회원정보 중 숙박이 X인 경우 이 input요소에 checked attribute를 추가해주세요-->
+                                    <!--radio타입input이 DB수정에 불필요하다면 지워주셔도 좋습니다.-->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="member--fix-selectWrap">
+                        <div class="member--fix-select">
+                            <div class="member--fix-select-text"><p>학교 및 분야</p></div>
+                            <div class="member--fix-selectBox">
+                                <div class="member--fix-select-showBox">
+                                    <p class="member--fix-select-showBox-p">${회원이 선택했던 분야}</p><!--안의 텍스트는 최초 가입 시 선택한 분야를 넣어주세요-->
+                                    <span></span>
+                                </div>
+                                <div class="member--fix-select-list">
+                                    <div class="member--fix-select-listItem">${분야1}</div>
+                                    <div class="member--fix-select-listItem">${분야2}</div>
+                                    <div class="member--fix-select-listItem">${분야3}</div>
+                                </div>
+                            </div>
+                            <div class="member--fix-selectBox">
+                                <div class="member--fix-select-showBox">
+                                    <p class="member--fix-select-showBox-p">${회원이 선택했던 대학교}</p><!--안의 텍스트는 최초 가입 시 선택한 분야를 넣어주세요-->
+                                    <span></span>
+                                </div>
+                                <div class="member--fix-select-list">
+                                    <div class="member--fix-select-listItem">${대학교1}</div>
+                                    <div class="member--fix-select-listItem">${대학교2}</div>
+                                    <div class="member--fix-select-listItem">${대학교3}</div>
+                                </div>
+                            </div>
+                            <div class="member--fix-inputBox">
+                                <input type="text" placeholder="${1234학번}"><!--최초 가입 시 입력했던 학번을 placeholder안에 반영해주세요-->
+                            </div>
+                            <p class="member--fix-select-desc">소속과 학번을 정확하게 입력해주세요!</p>
+                        </div>
+                    </div>
+                    <input class="member--fix-inputSubmit" type="submit" value="수정 완료">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public--notice"><!--공지게시글 슬라이드-->
+        <div class="public--notice-wrap">
+            <div class="public--notice-title">Notice</div>
+            <div class="swiper publicNoticeSwiper">
+                <div class="swiper-wrapper">
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 제목이 들어가는 영역입니다.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역제목22222.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                    <a href="해당공지글로이동" class="swiper-slide">
+                        <div class="public--notice-text01"><span>&lt;공지사항&gt;</span> 영역333333.</div><!--해당 게시글의 제목이 들어갑니다. @@게시글을 공지 로 지정할 시, spand요소를 출력해주세요@@-->
+                        <div class="public--notice-text02">2022.10.07</div><!--해당 게시글의 작성날짜가 들어갑니다.-->
+                    </a>
+                </div>
+            </div>
+            <div class="publicNoticeSwiper-button">
+                <div class="publicNoticeSwiper-button-prev swiper-button-prev"></div>
+                <div class="publicNoticeSwiper-button-next swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="header" class="headerComponent"></div>
+    <div id="footer" class="footerComponent"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./publish/js/get_component.js"></script>
+    <script src="./publish/js/public.js"></script>
+    <script src="./publish/js/memberFix.js"></script>
+</body>
+</html>
