@@ -147,23 +147,23 @@
                         <div class="member--fix-select">
                             <div class="member--fix-select-text"><p>학교 및 분야</p></div>
                             <div class="member--fix-selectBox">
-                                <div class="member--fix-select-showBox">
+                                <div class="member--fix-select-showBox"><!--이 요소 클릭 시, 형제 요소인 div.member--fix-select-list에게 show클래스를 부여해주세요 또한 대학교 선택에 있는 div.member--fix-select-list요소에 show가 있을 시 제거해주세요-->
                                     <p class="member--fix-select-showBox-p">${회원이 선택했던 분야}</p><!--안의 텍스트는 최초 가입 시 선택한 분야를 넣어주세요-->
                                     <span></span>
                                 </div>
-                                <div class="member--fix-select-list">
-                                    <div class="member--fix-select-listItem">${분야1}</div>
+                                <div class="member--fix-select-list"><!--이 요소에 show 클래스가 toggle됩니다.-->
+                                    <div class="member--fix-select-listItem">${분야1}</div><!--이 요소들을 클릭 시, 부모요서인 div.member--fix-select-list의 show클래스를 지워주세요. p.member--fix-select-showBox-p의 텍스트를 이 선택한 텍스트로 교체해주세요.-->
                                     <div class="member--fix-select-listItem">${분야2}</div>
                                     <div class="member--fix-select-listItem">${분야3}</div>
                                 </div>
                             </div>
                             <div class="member--fix-selectBox">
-                                <div class="member--fix-select-showBox">
+                                <div class="member--fix-select-showBox"><!--이 요소 클릭 시, 형제 요소인 div.member--fix-select-list에게 show클래스를 부여해주세요 또한 분야 선택에 있는 div.member--fix-select-list요소에 show가 있을 시 제거해주세요-->
                                     <p class="member--fix-select-showBox-p">${회원이 선택했던 대학교}</p><!--안의 텍스트는 최초 가입 시 선택한 분야를 넣어주세요-->
                                     <span></span>
                                 </div>
-                                <div class="member--fix-select-list">
-                                    <div class="member--fix-select-listItem">${대학교1}</div>
+                                <div class="member--fix-select-list"><!--이 요소에 show 클래스가 toggle됩니다.-->
+                                    <div class="member--fix-select-listItem">${대학교1}</div><!--이 요소들을 클릭 시, 부모요서인 div.member--fix-select-list의 show클래스를 지워주세요. p.member--fix-select-showBox-p의 텍스트를 이 선택한 텍스트로 교체해주세요.-->
                                     <div class="member--fix-select-listItem">${대학교2}</div>
                                     <div class="member--fix-select-listItem">${대학교3}</div>
                                 </div>
