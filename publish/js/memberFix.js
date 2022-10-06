@@ -60,13 +60,18 @@ memberFixCheckLeave.addEventListener('click',function(){
 
 // member select show
 const memberFixShowBox = document.querySelectorAll(".member--fix-select-showBox")
+const memberFixSelectList = document.querySelectorAll(".member--fix-select-list")
 memberFixShowBox.forEach( (el) => {
     el.addEventListener( "click", () => {
         let thisParent = el.closest(".member--fix-selectBox")
         let selectList = thisParent.querySelector(".member--fix-select-list")
-        !selectList.classList.contains("show")
-        ?selectList.classList.add("show")
-        :selectList.classList.remove("show")
+        for(let item of memberFixSelectList){
+            item.classList.remove("show")
+        }
+        // !selectList.classList.contains("show")
+        // ?selectList.classList.add("show")
+        // :selectList.classList.remove("show")
+        selectList.classList.add("show")
     })
 })
 
